@@ -228,6 +228,7 @@ impl MysqlVersion {
             Some(Self::MariaDb33)
         } else if version.starts_with("3.4")
             || version.starts_with("10.8")
+            || version.starts_with("10.11")
             || version.starts_with("11")
         {
             Some(Self::MariaDb34)
